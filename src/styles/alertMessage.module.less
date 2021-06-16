@@ -1,0 +1,45 @@
+/* 
+此文件后缀加上.module表示CSS样式模块，可以在其他文件导入该文件，
+然后使用该文件的类名，以及样式
+*/
+
+@import "./var.less";
+ 
+.message {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: 0.5s;
+  transform: translate(-50%, -50%) translateY(25px);
+  opacity: 0;
+  white-space: nowrap;
+
+  &-info {//相当于message-info
+    background: @primary;
+  }
+
+  &-success {//相当于message-info
+    background: @success;
+  }
+
+  &-warn {//相当于message-warn
+    background: @warn;
+  }
+
+  &-fail {//相当于message-fail
+    background: @danger;
+  }
+}
+
+.icon{
+  font-size: 20px;
+  margin-right: 8px;
+}

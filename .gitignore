@@ -3,7 +3,8 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
-
+/node_modules
+/开发说明
 # Other files and folders
 .settings/
 
